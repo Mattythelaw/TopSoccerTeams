@@ -21,6 +21,12 @@ class MainActivity : AppCompatActivity() {
 
         teams[0] = "Liverpool"
 
+        var teamDisplayTxt = " "
+        teamDisplayTxt += "${teams[0]}\n"
+        teamDisplayTxt += "${teams[1]}\n"
+        teamDisplayTxt += "${teams[2]}\n"
+        teamDisplayTxt += "${teams[3]}\n"
+        teamDisplayTxt += "${teams[4]}\n"
 
         teamsTxt.text = Arrays.toString(teams)
 
