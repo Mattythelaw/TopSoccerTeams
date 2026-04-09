@@ -30,7 +30,7 @@
         android:layout_marginTop="88dp"
         android:layout_marginEnd="163dp"
         android:layout_marginBottom="477dp"
-        android:text="Teams"
+        android:text="teamsTxt"
         android:textColor="#00BCD4"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
