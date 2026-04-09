@@ -18,15 +18,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val teamsTxt = findViewById<TextView>(R.id.teamDisplayTxt)
+        var teamDisplayTxt = " "
+        var count = 0
 
+        //reassigning position 0 of the teams array//
         teams[0] = "Liverpool"
 
-        var teamDisplayTxt = " "
-        teamDisplayTxt += "${teams[0]}\n"
-        teamDisplayTxt += "${teams[1]}\n"
-        teamDisplayTxt += "${teams[2]}\n"
-        teamDisplayTxt += "${teams[3]}\n"
-        teamDisplayTxt += "${teams[4]}\n"
+        //while loop to iterate through the teams array and display team//
+        while(count < 5){
+            teamDisplayTxt += "${teams[count]}\n"
+        }
+
+
+
 
         teamsTxt.text = Arrays.toString(teams)
 
