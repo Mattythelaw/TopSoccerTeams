@@ -14,16 +14,18 @@ fun logArrValues(arr: Array<String>, limit:  Int = 0) {
     //if statement to check if there is a limit//
     if (limit == 0) {
         Log.v("Array Values: ", Arrays.toString(arr))
+    } else {
+        Log.v(
+            "Array values: ", Arrays.toString(
+                arr.sliceArray
+                    (0..limit - 1)
+            )
+        )
     }
-    else
-    {
-        Log.v("Array values: ", Arrays.toString(arr.sliceArray
-            (0..limit-1)))
-    }
-
+}
 class MainActivity : AppCompatActivity() {
 
-    val teams = arrayOf ("Liverpool", "Man City", "Manchester", "Orlando Pirates", "Chelsea")
+    val teams = arrayOf("Liverpool", "Man City", "Manchester", "Orlando Pirates", "Chelsea")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,15 +41,15 @@ class MainActivity : AppCompatActivity() {
         logArrValues(teams, 4)
 
         //reassigning position 0 of the teams array//
-        teams[0] = "Liverpool"
+        teams[0] = "Liverpool :)"
 
         //while loop to iterate through the teams array and display team//
- //       while(count < teams.count()){
- //           teamDisplayTxt += "${teams[count]}\n"
- //           count++
- //       }
+        //       while(count < teams.count()){
+        //           teamDisplayTxt += "${teams[count]}\n"
+        //           count++
+        //       }
 
-        for(team in teams){
+        for (team in teams) {
             teamDisplayTxt += "${teams}\n"
         }
 
