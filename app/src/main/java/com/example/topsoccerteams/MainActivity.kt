@@ -10,9 +10,13 @@ import androidx.core.view.WindowInsetsCompat
 import java.util.Arrays
 
 //created function to display in the terminal
-fun logArrValues(arr: Array<String>){
-    Log.v("Array Values: " , Arrays.toString(arr))
-}
+fun logArrValues(arr: Array<String>, limit:  Int = 0) {
+    //if statement to check if there is a limit//
+    if (limit == 0) {
+        Log.v("Array Values: ", Arrays.toString(arr))
+    }
+    else
+    {
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         //Calling logArrValues function
         logArrValues(teams)
+        logArrValues(teams, 4)
 
         //reassigning position 0 of the teams array//
         teams[0] = "Liverpool"
