@@ -25,9 +25,13 @@ class MainActivity : AppCompatActivity() {
         teams[0] = "Liverpool"
 
         //while loop to iterate through the teams array and display team//
-        while(count < teams.count()){
-            teamDisplayTxt += "${teams[count]}\n"
-            count++
+ //       while(count < teams.count()){
+ //           teamDisplayTxt += "${teams[count]}\n"
+ //           count++
+ //       }
+
+        for(team in teams){
+            teamDisplayTxt += "${teams}\n"
         }
 
 
