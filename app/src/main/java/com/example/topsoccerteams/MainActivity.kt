@@ -17,6 +17,9 @@ fun logArrValues(arr: Array<String>, limit:  Int = 0) {
     }
     else
     {
+        Log.v("Array values: ", Arrays.toString(arr.sliceArray
+            (0..limit-1)))
+    }
 
 class MainActivity : AppCompatActivity() {
 
