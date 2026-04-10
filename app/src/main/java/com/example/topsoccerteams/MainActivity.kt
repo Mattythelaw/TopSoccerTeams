@@ -1,12 +1,18 @@
 package com.example.topsoccerteams
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import java.util.Arrays
+
+//created function to display in the terminal
+fun logArrValues(arr: Array<String>){
+    Log.v("Array Values: " , Arrays.toString(arr))
+}
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         val teamsTxt = findViewById<TextView>(R.id.teamDisplayTxt)
         var teamDisplayTxt = " "
         var count = 0
+
+        //Calling logArrValues function
+        logArrValues(teams)
 
         //reassigning position 0 of the teams array//
         teams[0] = "Liverpool"
