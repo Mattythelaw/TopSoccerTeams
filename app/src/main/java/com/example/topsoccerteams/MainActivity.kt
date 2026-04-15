@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import java.util.Arrays
 
 class MainActivity : AppCompatActivity() {
+    //top level function//
 
     val teams = arrayOf("Liverpool", "Man City", "Manchester", "Orlando Pirates", "Chelsea")
 
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        //local function//
 
         val teamsTxt = findViewById<TextView>(R.id.teamDisplayTxt)
         var teamDisplayTxt = " "
