@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     val teams = arrayOf("Liverpool", "Man City", "Manchester", "Orlando Pirates", "Chelsea")
 
+    //Adding function for shortest string in array//
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                  count++
              }
         //Calling getShortest and displaying the result//
-        
+
 
 //        for (team in teams) {
 //            teamDisplayTxt += "${teams}\n"//
