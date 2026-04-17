@@ -43,7 +43,8 @@ class MainActivity : AppCompatActivity() {
                  count++
              }
         //Calling getShortest and displaying the result//
-
+        val shortestTeam = getShortest(teams)
+        teamDisplayTxt += "\nShortest team name: $shortestTeam"
 
 //        for (team in teams) {
 //            teamDisplayTxt += "${teams}\n"//
