@@ -15,6 +15,15 @@ class MainActivity : AppCompatActivity() {
     val teams = arrayOf("Liverpool", "Man City", "Manchester", "Orlando Pirates", "Chelsea")
 
     //Adding function for shortest string in array//
+    fun getShortest(arr: Array<String>): String {
+        var shortest = arr[0]
+        for (team in arr) {
+            if (team.length < shortest.length) {
+                shortest = team
+        }
+    }
+        return shortest
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
