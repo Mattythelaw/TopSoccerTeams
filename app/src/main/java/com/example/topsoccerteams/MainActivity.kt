@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
                    teamDisplayTxt += "${teams[count]}\n"
                  count++
              }
+        //Calling getShortest and displaying the result//
+        
 
 //        for (team in teams) {
 //            teamDisplayTxt += "${teams}\n"//
